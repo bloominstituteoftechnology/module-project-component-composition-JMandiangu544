@@ -1,28 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import { Axios } from 'axios'
+import Card from './Card'
 
 const api_key = 'DEMO_KEY'
 const URL = "https://api.nasa.gov/planetary/apod?api_key=${api_key}"
-
-function Figure({ imageURL, caption}) {
-  return (
-    <figure>
-      <img src={imageURL} />
-      <figcaption>Awesome pic taken on {caption}</figcaption>
-    </figure>
-
-function Card({ title, text, imageURL, date}) {
-  return (
-    <div className='card'>
-      <h2>{title}</h2>
-      <p>{text}</p>
-    <Figure 
-    imageURL={imageURL}
-    caption={date}
-    />
-    </div>
-  )
-}
 
 function App() {
   const [apod, setApod] = useState()
