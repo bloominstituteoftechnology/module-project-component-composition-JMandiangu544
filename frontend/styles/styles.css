@@ -34,3 +34,7 @@ header, footer {
   align-items: center;
   padding: 1rem;
 }
+
+section {
+  padding: 1rem;
+}
